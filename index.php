@@ -1,5 +1,6 @@
 <?php
-session_start(); ?>
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,14 +10,12 @@ session_start(); ?>
     <title>Home</title>
 </head>
 <body>
-    
+
     <div class="container container-login">
         <h2 class="titulo-login">Sistema de Login</h2>
-        <form action="login.php">
-            <label for="usuario">Usuário</label><br>
-            <input type="text" id="fusuario" value=""><br><br>
-            <label for="senha">Senha:</label><br>
-            <input type="password" id="senha" name="senha">
+        <form action="login.php" method="POST">
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário"><br><br>
+            <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
             <input type="submit" value="Entrar">
           </form>
 
