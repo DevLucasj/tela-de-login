@@ -1,3 +1,5 @@
+<?php
+session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +9,7 @@
     <title>Home</title>
 </head>
 <body>
+    
     <div class="container container-login">
         <h2 class="titulo-login">Sistema de Login</h2>
         <form action="login.php">
