@@ -22,7 +22,7 @@ $usuario = mysqli_real_escape_string($conexao,$_POST['usuario']);$senha = mysqli
 $query = "select usuario from usuario where usuario='{$usuario}' and senha= md5('{$senha}')";
 
 $result = mysqli_query($conexao, $query);
-
+/*seta $row com quantidade de linhas retornadas */
 $row = mysqli_num_rows($result);
 
 if($row == 1){

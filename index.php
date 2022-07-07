@@ -10,7 +10,16 @@ session_start();
     <title>Home</title>
 </head>
 <body>
-
+<?php
+                    if(isset($_SESSION['nao_autenticado'])):
+                    ?>
+                    <div class="notification is-danger">
+                      <p>ERRO: Usuário ou senha inválidos.</p>
+                    </div>
+                    <?php
+                    endif;
+                    unset($_SESSION['nao_autenticado']);
+                    ?>
     <div class="container container-login">
         <h2 class="titulo-login">Sistema de Login</h2>
         <form action="login.php" method="POST">
