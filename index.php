@@ -7,6 +7,8 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
@@ -21,13 +23,14 @@ session_start();
                     unset($_SESSION['nao_autenticado']);
                     ?>
     <div class="container container-login">
+        <div class="box-login" >
         <h2 class="titulo-login">Sistema de Login</h2>
         <form action="login.php" method="POST">
             <input type="text" id="usuario" name="usuario" placeholder="Usuário"><br><br>
             <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
-            <input type="submit" value="Entrar">
+            <button type="submit" class="button">Entrar</button>
           </form>
-
+                </div>  
     </div>
    
 </body>
