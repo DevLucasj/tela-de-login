@@ -10,8 +10,9 @@
    height: 50vh;
 }
 .box-login{
-    margin-left: auto;
-    margin-top: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
     
 }
 .button {
