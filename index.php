@@ -1,20 +1,15 @@
 <?php
-session_start(); 
+session_start();
+include('verifica_login.php');
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/css.css">
-    
-    <title>Home</title>
-</head>
-<body>
 
-    <div class="container container-login">
+<?php 
+$titulo = "home";
+include ('assets/head.php'); ?>
+
+
+<main>
+<div class="container container-login">
         <div class="box-login" >
         <h2 class="titulo-login">Sistema de Login</h2>
         <form class="form-login" action="login.php" method="POST">
@@ -24,7 +19,7 @@ session_start();
             <?php
                     if(isset($_SESSION['nao_autenticado'])):
                     ?>
-                    <div class="notification is-danger">
+                    <div class="notification">
                       <p>ERRO: Usuário ou senha inválidos.</p>
                     </div>
                     <?php
@@ -34,6 +29,5 @@ session_start();
           </form>
                 </div>  
     </div>
-   
-</body>
-</html>
+</main>
+<?php include ('assets/footer.php'); ?>
