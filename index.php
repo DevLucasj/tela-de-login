@@ -13,7 +13,15 @@ session_start();
     <title>Home</title>
 </head>
 <body>
-<?php
+
+    <div class="container container-login">
+        <div class="box-login" >
+        <h2 class="titulo-login">Sistema de Login</h2>
+        <form class="form-login" action="login.php" method="POST">
+            <input type="text" id="usuario" name="usuario" placeholder="Usuário"><br><br>
+            <input name="senha" class="input is-large" type="password" placeholder="Sua senha"><br>
+            <button type="submit" class="button">Entrar</button>
+            <?php
                     if(isset($_SESSION['nao_autenticado'])):
                     ?>
                     <div class="notification is-danger">
@@ -23,13 +31,6 @@ session_start();
                     endif;
                     unset($_SESSION['nao_autenticado']);
                     ?>
-    <div class="container container-login">
-        <div class="box-login" >
-        <h2 class="titulo-login">Sistema de Login</h2>
-        <form class="form-login" action="login.php" method="POST">
-            <input type="text" id="usuario" name="usuario" placeholder="Usuário"><br><br>
-            <input name="senha" class="input is-large" type="password" placeholder="Sua senha"><br>
-            <button type="submit" class="button">Entrar</button>
           </form>
                 </div>  
     </div>
