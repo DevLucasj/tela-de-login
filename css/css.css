@@ -8,7 +8,7 @@
 .container-login{
   height: 100vh;
   width: 100vw;
-   background-color: rebeccapurple;
+   background-color: rgb(180, 173, 187);
 }
 
 .box-login{
@@ -59,6 +59,12 @@
   font-size: 2rem;
 }
 
- .notification{
+.notification{
   color: white;
- }
+}
+
+h3{
+  color: white;
+  padding: 15px;
+  font-size: 2rem;
+}

@@ -18,12 +18,14 @@ include ('assets/head.php'); ?>
                     ?>
                     <div class="notification">
                       <p>ERRO: Usuário ou senha inválidos.</p>
+                      
                     </div>
                     <?php
                     endif;
                     unset($_SESSION['nao_autenticado']);
                     ?>
           </form>
+   
                 </div>  
     </div>
 </main>
