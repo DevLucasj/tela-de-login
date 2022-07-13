@@ -1,9 +1,6 @@
-<?php
-session_start();
-include('verifica_login.php');
-?>
 
 <?php 
+session_start();
 $titulo = "home";
 include ('assets/head.php'); ?>
 
